@@ -31,6 +31,7 @@ add_files -norecurse ${test_path}/../verif/tests/base_test.sv
 add_files -norecurse ${test_path}/../verif/tests/test_list.sv
 add_files -norecurse ${test_path}/../verif/testbench/testbench.sv
 
+set_property top testbench [current_fileset]
 set_property top testbench [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 
